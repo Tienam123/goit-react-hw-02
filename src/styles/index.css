@@ -1,5 +1,6 @@
 /* -----------------------------------/ Normalize styles /--------------------------------------- */
 @import "modern-normalize";
+@import "reset.css";
 /* -----------------------------------/ Variables /--------------------------------------- */
 @import "variables.css";
 
@@ -8,6 +9,7 @@
     overflow: hidden;
     touch-action: none;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -20,9 +22,11 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 [class*="__container"] {
     padding: 0 15px;
 }
+
 @media screen and (max-width: 374.98px) {
     [class*="__container"] {
         max-width: 375px;

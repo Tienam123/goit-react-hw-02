@@ -1,22 +1,22 @@
 :root {
     /* Root colors */
-    --bgColor: #000;
-    --mainColor: #fff;
+    --bgColor: #fff;
+    --mainColor: #000;
 
     /* Page Settings */
-    --minWidth:320px;
-    --maxWidth:1440px;
+    --minWidth: 320px;
+    --maxWidth: 1440px;
 
     /*  Color Palette */
 
 
     /* Font-settings */
-    --fontFamily: "Avenir Roman",sans-sefif;
+    --fontFamily: "Avenir Roman", sans-sefif;
     --fontSize: 14px;
     /*  Variables  */
-    --pc:var(--maxWidth);
-    --tablet:768px;
-    --mobile:374px;
+    --pc: var(--maxWidth);
+    --tablet: 768px;
+    --mobile: 374px;
 
     /*  Animation  */
 }
