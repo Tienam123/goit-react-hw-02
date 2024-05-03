@@ -1,8 +1,9 @@
 import Description from "@/components/Description/Description.jsx";
-import Option from "@/components/Option/Option.jsx";
+import Options from "@/components/Options/Options.jsx";
 import {useEffect, useState} from "react";
 import Feedback from "@/components/Feedback/Feedback.jsx";
 import style from './App.module.css'
+import Notification from "@/components/Notification/Notification.jsx";
 
 const App = () => {
     const BASE_KEY = 'feedback'
@@ -34,9 +35,9 @@ const App = () => {
     return (
         <>
             <Description/>
-            <Option feedback={feedback}
-                    resetFeedback={resetFeedback}
-                    updateFeedback={updateFeedback}
+            <Options feedback={feedback}
+                     resetFeedback={resetFeedback}
+                     updateFeedback={updateFeedback}
             />
 
             {totalFeedback > 0
@@ -49,7 +50,7 @@ const App = () => {
                      />
                  </>
              )
-             : (<p className={style.text}>No feedback yet</p>)
+             : (<Notification text="No feedback yet"/>)
             }
         </>
     );

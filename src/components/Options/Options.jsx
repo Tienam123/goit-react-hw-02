@@ -1,7 +1,11 @@
-import style from './Option.module.css'
+import style from './Options.module.css'
 
 
-const Option = ({updateFeedback, resetFeedback, feedback}) => {
+const Options = ({
+                     updateFeedback,
+                     resetFeedback,
+                     feedback
+                 }) => {
     const buttons = Object.keys(feedback)
     console.log(feedback)
     const handleClickButton = (e) => {
@@ -34,4 +38,4 @@ const Option = ({updateFeedback, resetFeedback, feedback}) => {
         </ul>
     );
 };
-export default Option
+export default Options
